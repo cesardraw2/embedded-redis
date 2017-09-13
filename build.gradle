@@ -5,7 +5,7 @@ plugins {
 }
 
 def libGroup = 'eu.monniot.redis'
-def libVersion = '1.5.1'
+def libVersion = '1.5.1-sbt'
 def libArtifact = 'embedded-redis'
 
 rootProject.ext.libGroup = libGroup
@@ -86,12 +86,12 @@ allprojects {
         //dryRun = true
 
         pkg {
-            repo = 'maven'
+            repo = 'open-forks'
             name = libArtifact // Will be overridden by project definition
 
-            websiteUrl = 'https://github.com/fmonniot/embedded-redis'
-            issueTrackerUrl = 'https://github.com/fmonniot/embedded-redis/issues'
-            vcsUrl = 'https://github.com/fmonniot/embedded-redis.git'
+            websiteUrl = 'https://github.com/tarossi/embedded-redis'
+            issueTrackerUrl = 'https://github.com/tarossi/embedded-redis/issues'
+            vcsUrl = 'https://github.com/tarossi/embedded-redis.git'
             licenses = ['Apache-2.0']
 
             publicDownloadNumbers = false

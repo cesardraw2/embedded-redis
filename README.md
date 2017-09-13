@@ -1,15 +1,17 @@
 embedded-redis 
 ==============
 
-Redis embedded server for Java integration testing
+Redis embedded server for Scala Integration Testing.
 
-_This is a fork of https://github.com/fmonniot/embedded-redis_
+_This is a fork of https://github.com/jenchenUA/embedded-redis, which in turn is a fork of
+https://github.com/fmonniot/embedded-redis_
 
 _Used Redis v.3.2.1_ 
 
 _Features:_
-* _Windows support_
-
+* _Embeds executables in the JAR._
+* _Works at least from `build.sbt`s `Setup`/`Cleanup` hooks (other modes may have broken;
+not tested nor interested in doing so)._
 
 Usage
 ==============
@@ -151,3 +153,4 @@ Contributors
  * Artem Orobets ([@enisher](https://github.com/enisher))
  * Sean Simonsen ([@SeanSimonsen](https://github.com/SeanSimonsen))
  * Rob Winch ([@rwinch](https://github.com/rwinch))
+ * Eugene Zadoyannyy ([@jenchenUA](https://github.com/jenchenUA))
