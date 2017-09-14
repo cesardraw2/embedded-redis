@@ -10,8 +10,6 @@ _Used Redis v.3.2.1_
 
 _Features:_
 * _Embeds executables in the JAR._
-* _Works at least from `build.sbt`s `Setup`/`Cleanup` hooks (other modes may have broken;
-not tested nor interested in doing so)._
 
 Usage
 ==============
@@ -34,9 +32,9 @@ You can also provide RedisServer with your own executable:
 RedisExecProvider provider = RedisExecProvider.defaultProvider()
   .override(OS.UNIX, "/path/to/unix/redis")
   .override(OS.WINDOWS, Architecture.x86, "/path/to/windows/redis")
-  .override(OS.Windows, Architecture.x86_64, "/path/to/windows/redis")
+  .override(OS.WINDOWS, Architecture.x86_64, "/path/to/windows/redis64")
   .override(OS.MAC_OS_X, Architecture.x86, "/path/to/macosx/redis")
-  .override(OS.MAC_OS_X, Architecture.x86_64, "/path/to/macosx/redis")
+  .override(OS.MAC_OS_X, Architecture.x86_64, "/path/to/macosx/redis64")
   
 RedisServer redisServer = new RedisServer(provider, 6379);
 ```

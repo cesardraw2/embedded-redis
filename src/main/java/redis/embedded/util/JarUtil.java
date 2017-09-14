@@ -50,13 +50,12 @@ public class JarUtil {
      */
     private static URL getResource(String resourceName) {
         URL url = null;
-        ClassLoader loader;
-//        ClassLoader loader = Thread.currentThread().getContextClassLoader();
+        ClassLoader loader = Thread.currentThread().getContextClassLoader();
 
         // Try in the current context class loader
-//        if (loader != null) {
-//            url = loader.getResource(resourceName);
-//        }
+        if (loader != null) {
+            url = loader.getResource(resourceName);
+        }
 
         // If nothing, try in this class ClassLoader
         loader = JarUtil.class.getClassLoader();
