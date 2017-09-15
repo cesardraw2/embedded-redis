@@ -33,7 +33,7 @@ public class RedisExecProvider {
     }
 
     private void initExecutables() {
-        executables.put(OsArchitecture.UNIX_x86_64, "redis-server-3.2.1-64");
+        executables.put(OsArchitecture.UNIX_x86_64, "redis-server-3.2.1");
 
         executables.put(OsArchitecture.WINDOWS_x86, "redis-server-3.2.1.exe");
         executables.put(OsArchitecture.WINDOWS_x86_64, "redis-server-3.2.1.exe");

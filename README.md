@@ -6,10 +6,8 @@ Redis embedded server for Scala Integration Testing.
 _This is a fork of https://github.com/jenchenUA/embedded-redis, which in turn is a fork of
 https://github.com/fmonniot/embedded-redis_
 
-_Used Redis v.3.2.1_ 
-
 _Features:_
-* _Embeds executables in the JAR._
+* _Embeds 3.2.1 executables in the JAR._
 
 Usage
 ==============

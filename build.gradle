@@ -86,7 +86,7 @@ allprojects {
         //dryRun = true
 
         pkg {
-            repo = 'open-forks'
+            repo = 'public'
             name = libArtifact // Will be overridden by project definition
 
             websiteUrl = 'https://github.com/tarossi/embedded-redis'
